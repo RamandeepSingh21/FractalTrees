@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        canvas{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+        }
+    </style>        
+    <script src = "Vector2.js" defer></script>
+    <script src = "Leaf.js" defer></script>
+    <script src = "Branch.js" defer></script>
+    <script src = "Tree.js" defer></script>
+    <script src = "app.js" defer></script>
+</head>
+<body>
+    <canvas id = "canvas"></canvas>
+    <div>
+        <label>GROWTH VALUES</label>
+        <br>
+        <label>Length Dampening Factor :</label>
+        <input type="range" min="0.1" max="0.9" value="0.8" step="any" id="D">
+        <label>Total Angle :</label>
+        <input type="range" min="10" max="360" value="60" id="A">
+        <label>Number Of Branches :</label>
+        <input type="range" min="1" max="3" value="2" id="N">
+        <br>
+        <label>Depth :</label>
+        <input type="range" min="2" max="10" value="2" id="Depth">
+        <label>Length :</label>
+        <input type="range" min="5" max="200" value="50" id="Length">
+    </div>
+</body>
+</html>
